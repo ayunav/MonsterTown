@@ -15,21 +15,20 @@ smallTown.changePopulation(500)
 smallTown.printTownDescription()
 
 let gm = Monster() //generic monster
-//gm.town = smallTown
 gm.terrorizeTown(smallTown)
 
 var veryLittleTown = Town(name: "The littlest town", population: 9, numberOfStopLights: 0)
 veryLittleTown.printTownDescription()
 
 let fredTheZombie = Zombie()
-//fredTheZombie.town = smallTown
 fredTheZombie.terrorizeTown(veryLittleTown)
-//fredTheZombie.town?.printTownDescription()
-//fredTheZombie.changeName("Fred the Zombie", walksWithLimp: false)
-//
-//var veryLittleTown = Town(population: 9, numberOfStopLights: 0, name:
+
 veryLittleTown.printTownDescription()
-//let secondZombie = Zombie()
-//secondZombie.town = veryLittleTown
-//secondZombie.terrorizeTown()
-//veryLittleTown.printTownDescription()
+
+
+struct Square {
+    static func numberOfSides() -> Int {
+        return 4
+    }
+}
+

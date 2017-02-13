@@ -9,7 +9,7 @@
 import Foundation
 
 class Monster {
-//    var town: Town?
+
     var name = "Monster"
     
     func terrorizeTown(_ town: Town?) {
