@@ -9,15 +9,15 @@
 import Foundation
 
 struct Town {
+    var name: String
     var population: Int
     var numberOfStopLights: Int
-    var name: String
     
     func printTownDescription() {
-        print("Population: \(population); number of stop lights: \(numberOfStopLights)")
+        print("Name: \(name), population: \(population); number of stop lights: \(numberOfStopLights)")
     }
     
-    mutating func changePopulation(amount: Int) {
+    mutating func changePopulation(_ amount: Int) {
         population += amount
     }
     

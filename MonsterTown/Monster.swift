@@ -9,10 +9,10 @@
 import Foundation
 
 class Monster {
-    var town: Town?
+//    var town: Town?
     var name = "Monster"
     
-    func terrorizeTown() {
+    func terrorizeTown(_ town: Town?) {
         if town != nil {
             print("\(name) is terrorizing \(town!.name)!")
         } else {
